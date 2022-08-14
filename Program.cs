@@ -10,4 +10,16 @@ string [] EnterArray()
     }
 return array;
 }
-//Console.WriteLine(string.Join("|",EnterArray()));
+Console.WriteLine(string.Join("|",EnterArray()));
+int CountWordArray(string []array)
+{
+    int count = 0;
+    for (int i=0; i<array.Length; i++)
+    {
+        if (array[i].Length<=3)
+        {
+            count++;
+        }
+    }
+    return count;
+}
